@@ -209,44 +209,55 @@ namespace OxygenConcentration.FormsforColumns
 
         private void buttonDrawct_Click(object sender, EventArgs e)
         {
-            // Получаем значения a и f из TextBox
-            if (double.TryParse(textBoxBeginCct.Text, out double a) && double.TryParse(textBoxCzasytkict.Text, out double f))
+            // Получаем значения a, f и x из TextBox
+            if (double.TryParse(textBoxBeginCct.Text, out double a) &&
+                double.TryParse(textBoxCzasytkict.Text, out double f) &&
+                double.TryParse(textBoxDayct.Text, out double d))
             {
-                DrawGraphCT(a, f);
+                DrawGraphCT(a, f, d);
             }
             else
             {
-                MessageBox.Show("Введите корректные значения для Начальная концетрация и Концентрация за сутки.");
+                MessageBox.Show("Введите корректные значения для Начальная концентрация, Концентрация за сутки и День цикла.");
             }
         }
-        private void DrawGraphCT(double a, double f)
+
+        private void DrawGraphCT(double a, double f, double d)
         {
             // Очищаем предыдущие данные
             chartct.Series["ΔC"].Points.Clear();
 
-            // Строим график для x от 1 до 6
-            for (double x = 1; x <= 6; x += 1)
+            // Строим график для x от 1 до d
+            for (double x = 1; x <= d; x += 1)
             {
                 double y = a - f * x;
                 chartct.Series["ΔC"].Points.AddXY(x, y);
             }
 
+            // Добавляем точку для значения d
+            double yValueAtX = a - f * d;
+            chartct.Series["ΔC"].Points.AddXY(d, yValueAtX);
+
             // Настройка осей
+
             chartct.ChartAreas[0].AxisX.Title = "День цикла";
             chartct.ChartAreas[0].AxisY.Title = "Концентрация";
             chartct.Invalidate(); // Обновляем график
-                                  // Создаем серию данных
+
+            // Создаем серию данных
             Series series = new Series
             {
                 ChartType = SeriesChartType.Line,
                 MarkerStyle = MarkerStyle.Circle,
                 MarkerSize = 10
             };
+
             foreach (var point in series.Points)
             {
                 point.ToolTip = $"X: {point.XValue}, Y: {point.YValues[0]:F2}"; // Ограничиваем до 2 знаков после запятой
             }
         }
+
 
         private void textBoxDayct_TextChanged(object sender, EventArgs e)
         {

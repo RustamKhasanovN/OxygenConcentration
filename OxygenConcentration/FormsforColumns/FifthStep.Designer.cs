@@ -551,7 +551,6 @@
             series2.ChartArea = "ChartArea1";
             series2.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
             series2.Color = System.Drawing.Color.Blue;
-            series2.IsValueShownAsLabel = true;
             series2.LabelBackColor = System.Drawing.Color.White;
             series2.LabelBorderColor = System.Drawing.Color.Black;
             series2.LabelFormat = "F3";
@@ -560,6 +559,7 @@
             series2.MarkerColor = System.Drawing.Color.Red;
             series2.MarkerStyle = System.Windows.Forms.DataVisualization.Charting.MarkerStyle.Circle;
             series2.Name = "ΔC";
+            series2.ToolTip = "#VAL";
             this.chartct.Series.Add(series2);
             this.chartct.Size = new System.Drawing.Size(622, 302);
             this.chartct.TabIndex = 113;
