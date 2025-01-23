@@ -87,7 +87,7 @@
             // 
             this.FiveLevelTitle.AutoSize = true;
             this.FiveLevelTitle.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.FiveLevelTitle.Location = new System.Drawing.Point(515, 719);
+            this.FiveLevelTitle.Location = new System.Drawing.Point(502, 785);
             this.FiveLevelTitle.Margin = new System.Windows.Forms.Padding(0);
             this.FiveLevelTitle.Name = "FiveLevelTitle";
             this.FiveLevelTitle.Size = new System.Drawing.Size(132, 22);
@@ -98,7 +98,7 @@
             // 
             this.FourLevelTitle.AutoSize = true;
             this.FourLevelTitle.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.FourLevelTitle.Location = new System.Drawing.Point(493, 592);
+            this.FourLevelTitle.Location = new System.Drawing.Point(480, 658);
             this.FourLevelTitle.Margin = new System.Windows.Forms.Padding(0);
             this.FourLevelTitle.Name = "FourLevelTitle";
             this.FourLevelTitle.Size = new System.Drawing.Size(168, 22);
@@ -110,7 +110,7 @@
             this.ColumnNumber5a.BackColor = System.Drawing.Color.MediumTurquoise;
             this.ColumnNumber5a.Cursor = System.Windows.Forms.Cursors.Hand;
             this.ColumnNumber5a.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.ColumnNumber5a.Location = new System.Drawing.Point(585, 760);
+            this.ColumnNumber5a.Location = new System.Drawing.Point(572, 826);
             this.ColumnNumber5a.Margin = new System.Windows.Forms.Padding(0);
             this.ColumnNumber5a.Name = "ColumnNumber5a";
             this.ColumnNumber5a.Size = new System.Drawing.Size(62, 57);
@@ -124,7 +124,7 @@
             this.ColumnNumber61.BackColor = System.Drawing.Color.MediumTurquoise;
             this.ColumnNumber61.Cursor = System.Windows.Forms.Cursors.Hand;
             this.ColumnNumber61.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.ColumnNumber61.Location = new System.Drawing.Point(513, 760);
+            this.ColumnNumber61.Location = new System.Drawing.Point(500, 826);
             this.ColumnNumber61.Margin = new System.Windows.Forms.Padding(0);
             this.ColumnNumber61.Name = "ColumnNumber61";
             this.ColumnNumber61.Size = new System.Drawing.Size(62, 57);
@@ -138,7 +138,7 @@
             this.ColumnNumber5.BackColor = System.Drawing.Color.MediumTurquoise;
             this.ColumnNumber5.Cursor = System.Windows.Forms.Cursors.Hand;
             this.ColumnNumber5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.ColumnNumber5.Location = new System.Drawing.Point(585, 634);
+            this.ColumnNumber5.Location = new System.Drawing.Point(572, 700);
             this.ColumnNumber5.Margin = new System.Windows.Forms.Padding(0);
             this.ColumnNumber5.Name = "ColumnNumber5";
             this.ColumnNumber5.Size = new System.Drawing.Size(62, 57);
@@ -152,7 +152,7 @@
             this.ColumnNumber58.BackColor = System.Drawing.Color.MediumTurquoise;
             this.ColumnNumber58.Cursor = System.Windows.Forms.Cursors.Hand;
             this.ColumnNumber58.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.ColumnNumber58.Location = new System.Drawing.Point(513, 634);
+            this.ColumnNumber58.Location = new System.Drawing.Point(500, 700);
             this.ColumnNumber58.Margin = new System.Windows.Forms.Padding(0);
             this.ColumnNumber58.Name = "ColumnNumber58";
             this.ColumnNumber58.Size = new System.Drawing.Size(62, 57);
@@ -166,7 +166,7 @@
             this.ColumnNumber21.BackColor = System.Drawing.Color.MediumTurquoise;
             this.ColumnNumber21.Cursor = System.Windows.Forms.Cursors.Hand;
             this.ColumnNumber21.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.ColumnNumber21.Location = new System.Drawing.Point(585, 505);
+            this.ColumnNumber21.Location = new System.Drawing.Point(572, 571);
             this.ColumnNumber21.Margin = new System.Windows.Forms.Padding(0);
             this.ColumnNumber21.Name = "ColumnNumber21";
             this.ColumnNumber21.Size = new System.Drawing.Size(62, 57);
@@ -180,7 +180,7 @@
             this.ColumnNumber50.BackColor = System.Drawing.Color.MediumTurquoise;
             this.ColumnNumber50.Cursor = System.Windows.Forms.Cursors.Hand;
             this.ColumnNumber50.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.ColumnNumber50.Location = new System.Drawing.Point(513, 505);
+            this.ColumnNumber50.Location = new System.Drawing.Point(500, 571);
             this.ColumnNumber50.Margin = new System.Windows.Forms.Padding(0);
             this.ColumnNumber50.Name = "ColumnNumber50";
             this.ColumnNumber50.Size = new System.Drawing.Size(62, 57);
@@ -193,7 +193,7 @@
             // 
             this.ThirdLevelTitle.AutoSize = true;
             this.ThirdLevelTitle.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.ThirdLevelTitle.Location = new System.Drawing.Point(509, 464);
+            this.ThirdLevelTitle.Location = new System.Drawing.Point(496, 530);
             this.ThirdLevelTitle.Margin = new System.Windows.Forms.Padding(0);
             this.ThirdLevelTitle.Name = "ThirdLevelTitle";
             this.ThirdLevelTitle.Size = new System.Drawing.Size(139, 22);
@@ -205,7 +205,7 @@
             this.ColumnNumber9.BackColor = System.Drawing.Color.MediumTurquoise;
             this.ColumnNumber9.Cursor = System.Windows.Forms.Cursors.Hand;
             this.ColumnNumber9.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.ColumnNumber9.Location = new System.Drawing.Point(909, 368);
+            this.ColumnNumber9.Location = new System.Drawing.Point(896, 434);
             this.ColumnNumber9.Margin = new System.Windows.Forms.Padding(0);
             this.ColumnNumber9.Name = "ColumnNumber9";
             this.ColumnNumber9.Size = new System.Drawing.Size(62, 57);
@@ -219,7 +219,7 @@
             this.ColumnNumber8.BackColor = System.Drawing.Color.MediumTurquoise;
             this.ColumnNumber8.Cursor = System.Windows.Forms.Cursors.Hand;
             this.ColumnNumber8.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.ColumnNumber8.Location = new System.Drawing.Point(828, 368);
+            this.ColumnNumber8.Location = new System.Drawing.Point(815, 434);
             this.ColumnNumber8.Margin = new System.Windows.Forms.Padding(0);
             this.ColumnNumber8.Name = "ColumnNumber8";
             this.ColumnNumber8.Size = new System.Drawing.Size(62, 57);
@@ -233,7 +233,7 @@
             this.ColumnNumber7.BackColor = System.Drawing.Color.MediumTurquoise;
             this.ColumnNumber7.Cursor = System.Windows.Forms.Cursors.Hand;
             this.ColumnNumber7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.ColumnNumber7.Location = new System.Drawing.Point(751, 368);
+            this.ColumnNumber7.Location = new System.Drawing.Point(738, 434);
             this.ColumnNumber7.Margin = new System.Windows.Forms.Padding(0);
             this.ColumnNumber7.Name = "ColumnNumber7";
             this.ColumnNumber7.Size = new System.Drawing.Size(62, 57);
@@ -247,7 +247,7 @@
             this.ColumnNumber52.BackColor = System.Drawing.Color.MediumTurquoise;
             this.ColumnNumber52.Cursor = System.Windows.Forms.Cursors.Hand;
             this.ColumnNumber52.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.ColumnNumber52.Location = new System.Drawing.Point(673, 368);
+            this.ColumnNumber52.Location = new System.Drawing.Point(660, 434);
             this.ColumnNumber52.Margin = new System.Windows.Forms.Padding(0);
             this.ColumnNumber52.Name = "ColumnNumber52";
             this.ColumnNumber52.Size = new System.Drawing.Size(62, 57);
@@ -261,7 +261,7 @@
             this.ColumnNumber56.BackColor = System.Drawing.Color.MediumTurquoise;
             this.ColumnNumber56.Cursor = System.Windows.Forms.Cursors.Hand;
             this.ColumnNumber56.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.ColumnNumber56.Location = new System.Drawing.Point(451, 368);
+            this.ColumnNumber56.Location = new System.Drawing.Point(438, 434);
             this.ColumnNumber56.Margin = new System.Windows.Forms.Padding(0);
             this.ColumnNumber56.Name = "ColumnNumber56";
             this.ColumnNumber56.Size = new System.Drawing.Size(62, 57);
@@ -275,7 +275,7 @@
             this.ColumnNumber55.BackColor = System.Drawing.Color.MediumTurquoise;
             this.ColumnNumber55.Cursor = System.Windows.Forms.Cursors.Hand;
             this.ColumnNumber55.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.ColumnNumber55.Location = new System.Drawing.Point(375, 368);
+            this.ColumnNumber55.Location = new System.Drawing.Point(362, 434);
             this.ColumnNumber55.Margin = new System.Windows.Forms.Padding(0);
             this.ColumnNumber55.Name = "ColumnNumber55";
             this.ColumnNumber55.Size = new System.Drawing.Size(62, 57);
@@ -289,7 +289,7 @@
             this.ColumnNumber54.BackColor = System.Drawing.Color.MediumTurquoise;
             this.ColumnNumber54.Cursor = System.Windows.Forms.Cursors.Hand;
             this.ColumnNumber54.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.ColumnNumber54.Location = new System.Drawing.Point(304, 368);
+            this.ColumnNumber54.Location = new System.Drawing.Point(291, 434);
             this.ColumnNumber54.Margin = new System.Windows.Forms.Padding(0);
             this.ColumnNumber54.Name = "ColumnNumber54";
             this.ColumnNumber54.Size = new System.Drawing.Size(62, 57);
@@ -303,7 +303,7 @@
             this.ColumnNumber53.BackColor = System.Drawing.Color.MediumTurquoise;
             this.ColumnNumber53.Cursor = System.Windows.Forms.Cursors.Hand;
             this.ColumnNumber53.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.ColumnNumber53.Location = new System.Drawing.Point(232, 368);
+            this.ColumnNumber53.Location = new System.Drawing.Point(219, 434);
             this.ColumnNumber53.Margin = new System.Windows.Forms.Padding(0);
             this.ColumnNumber53.Name = "ColumnNumber53";
             this.ColumnNumber53.Size = new System.Drawing.Size(62, 57);
@@ -316,7 +316,7 @@
             // 
             this.SecondLevelTitle.AutoSize = true;
             this.SecondLevelTitle.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.SecondLevelTitle.Location = new System.Drawing.Point(509, 324);
+            this.SecondLevelTitle.Location = new System.Drawing.Point(496, 390);
             this.SecondLevelTitle.Margin = new System.Windows.Forms.Padding(0);
             this.SecondLevelTitle.Name = "SecondLevelTitle";
             this.SecondLevelTitle.Size = new System.Drawing.Size(142, 22);
@@ -328,7 +328,7 @@
             this.ColumnNumber25.BackColor = System.Drawing.Color.MediumTurquoise;
             this.ColumnNumber25.Cursor = System.Windows.Forms.Cursors.Hand;
             this.ColumnNumber25.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.ColumnNumber25.Location = new System.Drawing.Point(1072, 241);
+            this.ColumnNumber25.Location = new System.Drawing.Point(1081, 294);
             this.ColumnNumber25.Margin = new System.Windows.Forms.Padding(0);
             this.ColumnNumber25.Name = "ColumnNumber25";
             this.ColumnNumber25.Size = new System.Drawing.Size(62, 57);
@@ -342,7 +342,7 @@
             this.ColumnNumber22.BackColor = System.Drawing.Color.MediumTurquoise;
             this.ColumnNumber22.Cursor = System.Windows.Forms.Cursors.Hand;
             this.ColumnNumber22.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.ColumnNumber22.Location = new System.Drawing.Point(1010, 241);
+            this.ColumnNumber22.Location = new System.Drawing.Point(1012, 294);
             this.ColumnNumber22.Margin = new System.Windows.Forms.Padding(0);
             this.ColumnNumber22.Name = "ColumnNumber22";
             this.ColumnNumber22.Size = new System.Drawing.Size(62, 57);
@@ -356,7 +356,7 @@
             this.ColumnNumber31.BackColor = System.Drawing.Color.MediumTurquoise;
             this.ColumnNumber31.Cursor = System.Windows.Forms.Cursors.Hand;
             this.ColumnNumber31.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.ColumnNumber31.Location = new System.Drawing.Point(948, 241);
+            this.ColumnNumber31.Location = new System.Drawing.Point(943, 294);
             this.ColumnNumber31.Margin = new System.Windows.Forms.Padding(0);
             this.ColumnNumber31.Name = "ColumnNumber31";
             this.ColumnNumber31.Size = new System.Drawing.Size(62, 57);
@@ -370,7 +370,7 @@
             this.ColumnNumber30.BackColor = System.Drawing.Color.MediumTurquoise;
             this.ColumnNumber30.Cursor = System.Windows.Forms.Cursors.Hand;
             this.ColumnNumber30.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.ColumnNumber30.Location = new System.Drawing.Point(886, 241);
+            this.ColumnNumber30.Location = new System.Drawing.Point(874, 294);
             this.ColumnNumber30.Margin = new System.Windows.Forms.Padding(0);
             this.ColumnNumber30.Name = "ColumnNumber30";
             this.ColumnNumber30.Size = new System.Drawing.Size(62, 57);
@@ -384,7 +384,7 @@
             this.ColumnNumber27.BackColor = System.Drawing.Color.MediumTurquoise;
             this.ColumnNumber27.Cursor = System.Windows.Forms.Cursors.Hand;
             this.ColumnNumber27.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.ColumnNumber27.Location = new System.Drawing.Point(797, 241);
+            this.ColumnNumber27.Location = new System.Drawing.Point(805, 294);
             this.ColumnNumber27.Margin = new System.Windows.Forms.Padding(0);
             this.ColumnNumber27.Name = "ColumnNumber27";
             this.ColumnNumber27.Size = new System.Drawing.Size(62, 57);
@@ -398,7 +398,7 @@
             this.ColumnNumber26.BackColor = System.Drawing.Color.MediumTurquoise;
             this.ColumnNumber26.Cursor = System.Windows.Forms.Cursors.Hand;
             this.ColumnNumber26.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.ColumnNumber26.Location = new System.Drawing.Point(735, 241);
+            this.ColumnNumber26.Location = new System.Drawing.Point(736, 294);
             this.ColumnNumber26.Margin = new System.Windows.Forms.Padding(0);
             this.ColumnNumber26.Name = "ColumnNumber26";
             this.ColumnNumber26.Size = new System.Drawing.Size(62, 57);
@@ -412,7 +412,7 @@
             this.ColumnNumber24.BackColor = System.Drawing.Color.MediumTurquoise;
             this.ColumnNumber24.Cursor = System.Windows.Forms.Cursors.Hand;
             this.ColumnNumber24.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.ColumnNumber24.Location = new System.Drawing.Point(673, 241);
+            this.ColumnNumber24.Location = new System.Drawing.Point(667, 294);
             this.ColumnNumber24.Margin = new System.Windows.Forms.Padding(0);
             this.ColumnNumber24.Name = "ColumnNumber24";
             this.ColumnNumber24.Size = new System.Drawing.Size(62, 57);
@@ -426,7 +426,7 @@
             this.ColumnNumber23.BackColor = System.Drawing.Color.MediumTurquoise;
             this.ColumnNumber23.Cursor = System.Windows.Forms.Cursors.Hand;
             this.ColumnNumber23.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.ColumnNumber23.Location = new System.Drawing.Point(611, 241);
+            this.ColumnNumber23.Location = new System.Drawing.Point(598, 294);
             this.ColumnNumber23.Margin = new System.Windows.Forms.Padding(0);
             this.ColumnNumber23.Name = "ColumnNumber23";
             this.ColumnNumber23.Size = new System.Drawing.Size(62, 57);
@@ -440,7 +440,7 @@
             this.ColumnNumber28.BackColor = System.Drawing.Color.MediumTurquoise;
             this.ColumnNumber28.Cursor = System.Windows.Forms.Cursors.Hand;
             this.ColumnNumber28.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.ColumnNumber28.Location = new System.Drawing.Point(513, 241);
+            this.ColumnNumber28.Location = new System.Drawing.Point(529, 294);
             this.ColumnNumber28.Margin = new System.Windows.Forms.Padding(0);
             this.ColumnNumber28.Name = "ColumnNumber28";
             this.ColumnNumber28.Size = new System.Drawing.Size(62, 57);
@@ -454,7 +454,7 @@
             this.ColumnNumber69.BackColor = System.Drawing.Color.MediumTurquoise;
             this.ColumnNumber69.Cursor = System.Windows.Forms.Cursors.Hand;
             this.ColumnNumber69.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.ColumnNumber69.Location = new System.Drawing.Point(451, 241);
+            this.ColumnNumber69.Location = new System.Drawing.Point(460, 294);
             this.ColumnNumber69.Margin = new System.Windows.Forms.Padding(0);
             this.ColumnNumber69.Name = "ColumnNumber69";
             this.ColumnNumber69.Size = new System.Drawing.Size(62, 57);
@@ -468,7 +468,7 @@
             this.ColumnNumber29.BackColor = System.Drawing.Color.MediumTurquoise;
             this.ColumnNumber29.Cursor = System.Windows.Forms.Cursors.Hand;
             this.ColumnNumber29.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.ColumnNumber29.Location = new System.Drawing.Point(389, 241);
+            this.ColumnNumber29.Location = new System.Drawing.Point(391, 294);
             this.ColumnNumber29.Margin = new System.Windows.Forms.Padding(0);
             this.ColumnNumber29.Name = "ColumnNumber29";
             this.ColumnNumber29.Size = new System.Drawing.Size(62, 57);
@@ -482,7 +482,7 @@
             this.ColumnNumber68.BackColor = System.Drawing.Color.MediumTurquoise;
             this.ColumnNumber68.Cursor = System.Windows.Forms.Cursors.Hand;
             this.ColumnNumber68.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.ColumnNumber68.Location = new System.Drawing.Point(327, 241);
+            this.ColumnNumber68.Location = new System.Drawing.Point(322, 294);
             this.ColumnNumber68.Margin = new System.Windows.Forms.Padding(0);
             this.ColumnNumber68.Name = "ColumnNumber68";
             this.ColumnNumber68.Size = new System.Drawing.Size(62, 57);
@@ -496,7 +496,7 @@
             this.ColumnNumber38.BackColor = System.Drawing.Color.MediumTurquoise;
             this.ColumnNumber38.Cursor = System.Windows.Forms.Cursors.Hand;
             this.ColumnNumber38.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.ColumnNumber38.Location = new System.Drawing.Point(232, 241);
+            this.ColumnNumber38.Location = new System.Drawing.Point(253, 294);
             this.ColumnNumber38.Margin = new System.Windows.Forms.Padding(0);
             this.ColumnNumber38.Name = "ColumnNumber38";
             this.ColumnNumber38.Size = new System.Drawing.Size(62, 57);
@@ -510,7 +510,7 @@
             this.ColumnNumber73.BackColor = System.Drawing.Color.MediumTurquoise;
             this.ColumnNumber73.Cursor = System.Windows.Forms.Cursors.Hand;
             this.ColumnNumber73.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.ColumnNumber73.Location = new System.Drawing.Point(170, 241);
+            this.ColumnNumber73.Location = new System.Drawing.Point(184, 294);
             this.ColumnNumber73.Margin = new System.Windows.Forms.Padding(0);
             this.ColumnNumber73.Name = "ColumnNumber73";
             this.ColumnNumber73.Size = new System.Drawing.Size(62, 57);
@@ -524,7 +524,7 @@
             this.ColumnNumber39.BackColor = System.Drawing.Color.MediumTurquoise;
             this.ColumnNumber39.Cursor = System.Windows.Forms.Cursors.Hand;
             this.ColumnNumber39.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.ColumnNumber39.Location = new System.Drawing.Point(108, 241);
+            this.ColumnNumber39.Location = new System.Drawing.Point(115, 294);
             this.ColumnNumber39.Margin = new System.Windows.Forms.Padding(0);
             this.ColumnNumber39.Name = "ColumnNumber39";
             this.ColumnNumber39.Size = new System.Drawing.Size(62, 57);
@@ -538,7 +538,7 @@
             this.ColumnNumber72.BackColor = System.Drawing.Color.MediumTurquoise;
             this.ColumnNumber72.Cursor = System.Windows.Forms.Cursors.Hand;
             this.ColumnNumber72.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.ColumnNumber72.Location = new System.Drawing.Point(46, 241);
+            this.ColumnNumber72.Location = new System.Drawing.Point(46, 294);
             this.ColumnNumber72.Margin = new System.Windows.Forms.Padding(0);
             this.ColumnNumber72.Name = "ColumnNumber72";
             this.ColumnNumber72.Size = new System.Drawing.Size(62, 57);
@@ -552,7 +552,7 @@
             this.ColumnNumber46.BackColor = System.Drawing.Color.MediumTurquoise;
             this.ColumnNumber46.Cursor = System.Windows.Forms.Cursors.Hand;
             this.ColumnNumber46.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.ColumnNumber46.Location = new System.Drawing.Point(1072, 166);
+            this.ColumnNumber46.Location = new System.Drawing.Point(1080, 167);
             this.ColumnNumber46.Margin = new System.Windows.Forms.Padding(0);
             this.ColumnNumber46.Name = "ColumnNumber46";
             this.ColumnNumber46.Size = new System.Drawing.Size(62, 57);
@@ -566,7 +566,7 @@
             this.ColumnNumber45.BackColor = System.Drawing.Color.MediumTurquoise;
             this.ColumnNumber45.Cursor = System.Windows.Forms.Cursors.Hand;
             this.ColumnNumber45.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.ColumnNumber45.Location = new System.Drawing.Point(1010, 166);
+            this.ColumnNumber45.Location = new System.Drawing.Point(1011, 167);
             this.ColumnNumber45.Margin = new System.Windows.Forms.Padding(0);
             this.ColumnNumber45.Name = "ColumnNumber45";
             this.ColumnNumber45.Size = new System.Drawing.Size(62, 57);
@@ -580,7 +580,7 @@
             this.ColumnNumber49.BackColor = System.Drawing.Color.MediumTurquoise;
             this.ColumnNumber49.Cursor = System.Windows.Forms.Cursors.Hand;
             this.ColumnNumber49.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.ColumnNumber49.Location = new System.Drawing.Point(948, 166);
+            this.ColumnNumber49.Location = new System.Drawing.Point(942, 167);
             this.ColumnNumber49.Margin = new System.Windows.Forms.Padding(0);
             this.ColumnNumber49.Name = "ColumnNumber49";
             this.ColumnNumber49.Size = new System.Drawing.Size(62, 57);
@@ -594,7 +594,7 @@
             this.ColumnNumber47.BackColor = System.Drawing.Color.MediumTurquoise;
             this.ColumnNumber47.Cursor = System.Windows.Forms.Cursors.Hand;
             this.ColumnNumber47.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.ColumnNumber47.Location = new System.Drawing.Point(886, 166);
+            this.ColumnNumber47.Location = new System.Drawing.Point(873, 167);
             this.ColumnNumber47.Margin = new System.Windows.Forms.Padding(0);
             this.ColumnNumber47.Name = "ColumnNumber47";
             this.ColumnNumber47.Size = new System.Drawing.Size(62, 57);
@@ -608,7 +608,7 @@
             this.ColumnNumber48.BackColor = System.Drawing.Color.MediumTurquoise;
             this.ColumnNumber48.Cursor = System.Windows.Forms.Cursors.Hand;
             this.ColumnNumber48.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.ColumnNumber48.Location = new System.Drawing.Point(797, 166);
+            this.ColumnNumber48.Location = new System.Drawing.Point(804, 167);
             this.ColumnNumber48.Margin = new System.Windows.Forms.Padding(0);
             this.ColumnNumber48.Name = "ColumnNumber48";
             this.ColumnNumber48.Size = new System.Drawing.Size(62, 57);
@@ -622,7 +622,7 @@
             this.ColumnNumber40.BackColor = System.Drawing.Color.MediumTurquoise;
             this.ColumnNumber40.Cursor = System.Windows.Forms.Cursors.Hand;
             this.ColumnNumber40.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.ColumnNumber40.Location = new System.Drawing.Point(735, 166);
+            this.ColumnNumber40.Location = new System.Drawing.Point(735, 167);
             this.ColumnNumber40.Margin = new System.Windows.Forms.Padding(0);
             this.ColumnNumber40.Name = "ColumnNumber40";
             this.ColumnNumber40.Size = new System.Drawing.Size(62, 57);
@@ -636,7 +636,7 @@
             this.ColumnNumber42.BackColor = System.Drawing.Color.MediumTurquoise;
             this.ColumnNumber42.Cursor = System.Windows.Forms.Cursors.Hand;
             this.ColumnNumber42.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.ColumnNumber42.Location = new System.Drawing.Point(673, 166);
+            this.ColumnNumber42.Location = new System.Drawing.Point(666, 167);
             this.ColumnNumber42.Margin = new System.Windows.Forms.Padding(0);
             this.ColumnNumber42.Name = "ColumnNumber42";
             this.ColumnNumber42.Size = new System.Drawing.Size(62, 57);
@@ -650,7 +650,7 @@
             this.ColumnNumber37.BackColor = System.Drawing.Color.MediumTurquoise;
             this.ColumnNumber37.Cursor = System.Windows.Forms.Cursors.Hand;
             this.ColumnNumber37.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.ColumnNumber37.Location = new System.Drawing.Point(611, 166);
+            this.ColumnNumber37.Location = new System.Drawing.Point(597, 167);
             this.ColumnNumber37.Margin = new System.Windows.Forms.Padding(0);
             this.ColumnNumber37.Name = "ColumnNumber37";
             this.ColumnNumber37.Size = new System.Drawing.Size(62, 57);
@@ -664,7 +664,7 @@
             this.ColumnNumber71.BackColor = System.Drawing.Color.MediumTurquoise;
             this.ColumnNumber71.Cursor = System.Windows.Forms.Cursors.Hand;
             this.ColumnNumber71.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.ColumnNumber71.Location = new System.Drawing.Point(513, 166);
+            this.ColumnNumber71.Location = new System.Drawing.Point(528, 167);
             this.ColumnNumber71.Margin = new System.Windows.Forms.Padding(0);
             this.ColumnNumber71.Name = "ColumnNumber71";
             this.ColumnNumber71.Size = new System.Drawing.Size(62, 57);
@@ -678,7 +678,7 @@
             this.ColumnNumber70.BackColor = System.Drawing.Color.MediumTurquoise;
             this.ColumnNumber70.Cursor = System.Windows.Forms.Cursors.Hand;
             this.ColumnNumber70.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.ColumnNumber70.Location = new System.Drawing.Point(451, 166);
+            this.ColumnNumber70.Location = new System.Drawing.Point(459, 167);
             this.ColumnNumber70.Margin = new System.Windows.Forms.Padding(0);
             this.ColumnNumber70.Name = "ColumnNumber70";
             this.ColumnNumber70.Size = new System.Drawing.Size(62, 57);
@@ -692,7 +692,7 @@
             this.ColumnNumber36.BackColor = System.Drawing.Color.MediumTurquoise;
             this.ColumnNumber36.Cursor = System.Windows.Forms.Cursors.Hand;
             this.ColumnNumber36.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.ColumnNumber36.Location = new System.Drawing.Point(389, 166);
+            this.ColumnNumber36.Location = new System.Drawing.Point(390, 167);
             this.ColumnNumber36.Margin = new System.Windows.Forms.Padding(0);
             this.ColumnNumber36.Name = "ColumnNumber36";
             this.ColumnNumber36.Size = new System.Drawing.Size(62, 57);
@@ -706,7 +706,7 @@
             this.ColumnNumber35.BackColor = System.Drawing.Color.MediumTurquoise;
             this.ColumnNumber35.Cursor = System.Windows.Forms.Cursors.Hand;
             this.ColumnNumber35.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.ColumnNumber35.Location = new System.Drawing.Point(327, 166);
+            this.ColumnNumber35.Location = new System.Drawing.Point(321, 167);
             this.ColumnNumber35.Margin = new System.Windows.Forms.Padding(0);
             this.ColumnNumber35.Name = "ColumnNumber35";
             this.ColumnNumber35.Size = new System.Drawing.Size(62, 57);
@@ -720,7 +720,7 @@
             this.ColumnNumber64.BackColor = System.Drawing.Color.MediumTurquoise;
             this.ColumnNumber64.Cursor = System.Windows.Forms.Cursors.Hand;
             this.ColumnNumber64.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.ColumnNumber64.Location = new System.Drawing.Point(232, 166);
+            this.ColumnNumber64.Location = new System.Drawing.Point(252, 167);
             this.ColumnNumber64.Margin = new System.Windows.Forms.Padding(0);
             this.ColumnNumber64.Name = "ColumnNumber64";
             this.ColumnNumber64.Size = new System.Drawing.Size(62, 57);
@@ -734,7 +734,7 @@
             this.ColumnNumber44.BackColor = System.Drawing.Color.MediumTurquoise;
             this.ColumnNumber44.Cursor = System.Windows.Forms.Cursors.Hand;
             this.ColumnNumber44.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.ColumnNumber44.Location = new System.Drawing.Point(170, 166);
+            this.ColumnNumber44.Location = new System.Drawing.Point(183, 167);
             this.ColumnNumber44.Margin = new System.Windows.Forms.Padding(0);
             this.ColumnNumber44.Name = "ColumnNumber44";
             this.ColumnNumber44.Size = new System.Drawing.Size(62, 57);
@@ -748,7 +748,7 @@
             this.ColumnNumber66.BackColor = System.Drawing.Color.MediumTurquoise;
             this.ColumnNumber66.Cursor = System.Windows.Forms.Cursors.Hand;
             this.ColumnNumber66.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.ColumnNumber66.Location = new System.Drawing.Point(108, 166);
+            this.ColumnNumber66.Location = new System.Drawing.Point(114, 167);
             this.ColumnNumber66.Margin = new System.Windows.Forms.Padding(0);
             this.ColumnNumber66.Name = "ColumnNumber66";
             this.ColumnNumber66.Size = new System.Drawing.Size(62, 57);
@@ -762,7 +762,7 @@
             this.ColumnNumber34.BackColor = System.Drawing.Color.MediumTurquoise;
             this.ColumnNumber34.Cursor = System.Windows.Forms.Cursors.Hand;
             this.ColumnNumber34.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.ColumnNumber34.Location = new System.Drawing.Point(46, 166);
+            this.ColumnNumber34.Location = new System.Drawing.Point(45, 167);
             this.ColumnNumber34.Margin = new System.Windows.Forms.Padding(0);
             this.ColumnNumber34.Name = "ColumnNumber34";
             this.ColumnNumber34.Size = new System.Drawing.Size(62, 57);
@@ -775,7 +775,7 @@
             // 
             this.FirstLevelTitle.AutoSize = true;
             this.FirstLevelTitle.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.FirstLevelTitle.Location = new System.Drawing.Point(509, 132);
+            this.FirstLevelTitle.Location = new System.Drawing.Point(509, 84);
             this.FirstLevelTitle.Margin = new System.Windows.Forms.Padding(0);
             this.FirstLevelTitle.Name = "FirstLevelTitle";
             this.FirstLevelTitle.Size = new System.Drawing.Size(142, 22);
@@ -797,6 +797,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSize = true;
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1178, 1053);
             this.Controls.Add(this.FiveLevelTitle);
             this.Controls.Add(this.FourLevelTitle);

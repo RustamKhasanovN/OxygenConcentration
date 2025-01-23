@@ -9,16 +9,19 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Windows.Forms.DataVisualization.Charting;
 
+
 namespace OxygenConcentration.FormsforColumns
 {
     public partial class FirstStep : Form
     {
+        
         public FirstStep()
         {
             InitializeComponent();
             // Инициализируем TextBox значением TrackBar
             textBoxDays.Text = trackBarDaysVR.Value.ToString();
             textBoxDayct.Text = trackBarDaysCT.Value.ToString();
+            
         }
 
         private void Calculatebutton_Click(object sender, EventArgs e)
@@ -56,6 +59,7 @@ namespace OxygenConcentration.FormsforColumns
             textBoxdCzasutki.Text = "";
             textBoxInTime.Text = "";
             chartvr.Series["ΔCвр"].Points.Clear();
+          
         }
 
         private void trackBarDaysVR_Scroll(object sender, EventArgs e)
@@ -127,6 +131,59 @@ namespace OxygenConcentration.FormsforColumns
             }
         }
 
+        
+
+        private void textBoxdCzasutki_TextChanged(object sender, EventArgs e)
+        {
+            // Временно отключаем событие, чтобы избежать зацикливания
+            textBoxdCzasutki.TextChanged -= textBoxdCzasutki_TextChanged;
+
+            if (decimal.TryParse(textBoxdCzasutki.Text, out decimal value))
+            {
+                // Ограничиваем до 4 знаков после запятой и убираем лишние нули
+                textBoxdCzasutki.Text = value.ToString("0.####");
+
+                // Устанавливаем курсор в конец текста
+                textBoxdCzasutki.SelectionStart = textBoxdCzasutki.Text.Length;
+            }
+            else
+            {
+                // Если значение не удалось распарсить, очищаем текстовое поле или обрабатываем ошибку
+                textBoxdCzasutki.Text = string.Empty; // или оставьте текст как есть
+            }
+
+            // Включаем событие обратно
+            textBoxdCzasutki.TextChanged += textBoxdCzasutki_TextChanged;
+        }
+
+
+
+        private void textBoxInTime_TextChanged(object sender, EventArgs e)
+        {
+            // Временно отключаем событие, чтобы избежать зацикливания
+            textBoxInTime.TextChanged -= textBoxInTime_TextChanged;
+
+            if (decimal.TryParse(textBoxInTime.Text, out decimal value))
+            {
+                // Ограничиваем до 4 знаков после запятой и убираем лишние нули
+                textBoxInTime.Text = value.ToString("0.####");
+
+                // Устанавливаем курсор в конец текста
+                textBoxInTime.SelectionStart = textBoxInTime.Text.Length;
+            }
+
+            // Включаем событие обратно
+            textBoxInTime.TextChanged += textBoxInTime_TextChanged;
+        }
+
+
+
+
+        //Далее Куб+Тор
+
+
+
+
         private void buttonCalculatect_Click(object sender, EventArgs e)
         {
             try
@@ -156,47 +213,6 @@ namespace OxygenConcentration.FormsforColumns
                 MessageBox.Show("Поля не заполнены или заполнены неправильно");
             }
         }
-
-        private void textBoxdCzasutki_TextChanged(object sender, EventArgs e)
-        {
-            if (decimal.TryParse(textBoxdCzasutki.Text, out decimal value))
-            {
-                // Ограничиваем до 4 знаков после запятой
-                textBoxdCzasutki.Text = Math.Round(value, 4).ToString("F4");
-                textBoxdCzasutki.SelectionStart = textBoxdCzasutki.Text.Length; // Устанавливаем курсор в конец текста
-            }
-        }
-
-        private void textBoxCzasytkict_TextChanged(object sender, EventArgs e)
-        {
-            if (decimal.TryParse(textBoxCzasytkict.Text, out decimal value))
-            {
-                // Ограничиваем до 4 знаков после запятой
-                textBoxCzasytkict.Text = Math.Round(value, 4).ToString("F4");
-                textBoxCzasytkict.SelectionStart = textBoxCzasytkict.Text.Length; // Устанавливаем курсор в конец текста
-            }
-        }
-
-        private void textBoxIntimect_TextChanged(object sender, EventArgs e)
-        {
-            if (decimal.TryParse(textBoxIntimect.Text, out decimal value))
-            {
-                // Ограничиваем до 4 знаков после запятой
-                textBoxIntimect.Text = Math.Round(value, 4).ToString("F4");
-                textBoxIntimect.SelectionStart = textBoxIntimect.Text.Length; // Устанавливаем курсор в конец текста
-            }
-        }
-
-        private void textBoxInTime_TextChanged(object sender, EventArgs e)
-        {
-            if (decimal.TryParse(textBoxInTime.Text, out decimal value))
-            {
-                // Ограничиваем до 4 знаков после запятой
-                textBoxInTime.Text = Math.Round(value, 4).ToString("F4");
-                textBoxInTime.SelectionStart = textBoxInTime.Text.Length; // Устанавливаем курсор в конец текста
-            }
-        }
-
         private void buttonClearct_Click(object sender, EventArgs e)
         {
 
@@ -274,5 +290,80 @@ namespace OxygenConcentration.FormsforColumns
         {
             textBoxDayct.Text = trackBarDaysCT.Value.ToString();   // Обновляем TextBox при изменении TrackBar
         }
+        private void textBoxCzasytkict_TextChanged(object sender, EventArgs e)
+        {
+            // Временно отключаем событие, чтобы избежать зацикливания
+            textBoxCzasytkict.TextChanged -= textBoxCzasytkict_TextChanged;
+
+            if (decimal.TryParse(textBoxCzasytkict.Text, out decimal value))
+            {
+                // Ограничиваем до 4 знаков после запятой и убираем лишние нули
+                textBoxCzasytkict.Text = value.ToString("0.####");
+
+                // Устанавливаем курсор в конец текста
+                textBoxCzasytkict.SelectionStart = textBoxCzasytkict.Text.Length;
+            }
+            else
+            {
+                // Если значение не удалось распарсить, очищаем текстовое поле или обрабатываем ошибку
+                textBoxCzasytkict.Text = string.Empty; // или оставьте текст как есть
+            }
+
+            // Включаем событие обратно
+            textBoxCzasytkict.TextChanged += textBoxCzasytkict_TextChanged;
+        }
+
+
+        private void textBoxIntimect_TextChanged(object sender, EventArgs e)
+        {
+            // Временно отключаем событие, чтобы избежать зацикливания
+            textBoxIntimect.TextChanged -= textBoxIntimect_TextChanged;
+
+            if (decimal.TryParse(textBoxIntimect.Text, out decimal value))
+            {
+                // Ограничиваем до 4 знаков после запятой и убираем лишние нули
+                textBoxIntimect.Text = value.ToString("0.####");
+
+                // Устанавливаем курсор в конец текста
+                textBoxIntimect.SelectionStart = textBoxIntimect.Text.Length;
+            }
+
+            // Включаем событие обратно
+            textBoxIntimect.TextChanged += textBoxIntimect_TextChanged;
+        }
+
+        private void buttonScreenshot_Click(object sender, EventArgs e)
+        {
+            TakeScreenshot();
+        }
+
+        private void TakeScreenshot()
+        {
+            // Создаем bitmap с размерами формы
+            using (Bitmap bitmap = new Bitmap(this.ClientSize.Width, this.ClientSize.Height))
+            {
+                // Рисуем форму на bitmap
+                this.DrawToBitmap(bitmap, new Rectangle(0, 0, bitmap.Width, bitmap.Height));
+
+                // Открываем диалоговое окно для сохранения файла
+                using (SaveFileDialog saveFileDialog = new SaveFileDialog())
+                {
+                    saveFileDialog.Filter = "PNG Image|*.png";
+                    saveFileDialog.Title = "Сохранить скриншот";
+                    saveFileDialog.FileName = "screenshot.png";
+
+                    if (saveFileDialog.ShowDialog() == DialogResult.OK)
+                    {
+                        // Сохраняем изображение в файл
+                        bitmap.Save(saveFileDialog.FileName, System.Drawing.Imaging.ImageFormat.Png);
+                        MessageBox.Show($"Скриншот сохранен как {saveFileDialog.FileName}", "Скриншот", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
+                }
+            }
+        }
+        
+        
     }
 }
+    
+

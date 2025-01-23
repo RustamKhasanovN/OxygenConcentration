@@ -38,6 +38,10 @@
             this.splitContainer = new System.Windows.Forms.SplitContainer();
             this.buttondrawgraph = new System.Windows.Forms.Button();
             this.groupBoxvr = new System.Windows.Forms.GroupBox();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.labelEdC = new System.Windows.Forms.Label();
             this.textBoxInTime = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.textBoxDays = new System.Windows.Forms.TextBox();
@@ -54,9 +58,14 @@
             this.buttonClear = new System.Windows.Forms.Button();
             this.Calculatebutton = new System.Windows.Forms.Button();
             this.Titlehightank = new System.Windows.Forms.Label();
+            this.buttonScreenshot = new System.Windows.Forms.Button();
             this.trackBarDaysCT = new System.Windows.Forms.TrackBar();
             this.buttonDrawct = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
             this.textBoxIntimect = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.textBoxDayct = new System.Windows.Forms.TextBox();
@@ -108,6 +117,7 @@
             // splitContainer.Panel2
             // 
             this.splitContainer.Panel2.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.splitContainer.Panel2.Controls.Add(this.buttonScreenshot);
             this.splitContainer.Panel2.Controls.Add(this.trackBarDaysCT);
             this.splitContainer.Panel2.Controls.Add(this.buttonDrawct);
             this.splitContainer.Panel2.Controls.Add(this.groupBox1);
@@ -115,8 +125,8 @@
             this.splitContainer.Panel2.Controls.Add(this.buttonCalculatect);
             this.splitContainer.Panel2.Controls.Add(this.chartct);
             this.splitContainer.Panel2.Controls.Add(this.Titlecubetor);
-            this.splitContainer.Size = new System.Drawing.Size(1158, 879);
-            this.splitContainer.SplitterDistance = 435;
+            this.splitContainer.Size = new System.Drawing.Size(1172, 953);
+            this.splitContainer.SplitterDistance = 470;
             this.splitContainer.TabIndex = 0;
             // 
             // buttondrawgraph
@@ -135,6 +145,10 @@
             // 
             // groupBoxvr
             // 
+            this.groupBoxvr.Controls.Add(this.label11);
+            this.groupBoxvr.Controls.Add(this.label10);
+            this.groupBoxvr.Controls.Add(this.label7);
+            this.groupBoxvr.Controls.Add(this.labelEdC);
             this.groupBoxvr.Controls.Add(this.textBoxInTime);
             this.groupBoxvr.Controls.Add(this.label6);
             this.groupBoxvr.Controls.Add(this.textBoxDays);
@@ -156,6 +170,46 @@
             this.groupBoxvr.TabStop = false;
             this.groupBoxvr.Text = "Параметры";
             // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label11.Location = new System.Drawing.Point(371, 229);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(52, 22);
+            this.label11.TabIndex = 65;
+            this.label11.Text = "ат. %";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label10.Location = new System.Drawing.Point(371, 190);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(52, 22);
+            this.label10.TabIndex = 64;
+            this.label10.Text = "ат. %";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label7.Location = new System.Drawing.Point(371, 144);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(52, 22);
+            this.label7.TabIndex = 63;
+            this.label7.Text = "ат. %";
+            // 
+            // labelEdC
+            // 
+            this.labelEdC.AutoSize = true;
+            this.labelEdC.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelEdC.Location = new System.Drawing.Point(371, 102);
+            this.labelEdC.Name = "labelEdC";
+            this.labelEdC.Size = new System.Drawing.Size(52, 22);
+            this.labelEdC.TabIndex = 62;
+            this.labelEdC.Text = "ат. %";
+            // 
             // textBoxInTime
             // 
             this.textBoxInTime.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -165,6 +219,7 @@
             this.textBoxInTime.Name = "textBoxInTime";
             this.textBoxInTime.Size = new System.Drawing.Size(85, 30);
             this.textBoxInTime.TabIndex = 61;
+            this.textBoxInTime.Text = "0,1967";
             this.textBoxInTime.TextChanged += new System.EventHandler(this.textBoxInTime_TextChanged);
             // 
             // label6
@@ -229,7 +284,7 @@
             this.textBoxdCzasutki.Name = "textBoxdCzasutki";
             this.textBoxdCzasutki.Size = new System.Drawing.Size(85, 30);
             this.textBoxdCzasutki.TabIndex = 49;
-            this.textBoxdCzasutki.Text = "0,0047";
+            this.textBoxdCzasutki.Text = "0,0033";
             this.textBoxdCzasutki.TextChanged += new System.EventHandler(this.textBoxdCzasutki_TextChanged);
             // 
             // textBoxBeginC
@@ -374,6 +429,20 @@
             this.Titlehightank.TabIndex = 65;
             this.Titlehightank.Text = "ВР";
             // 
+            // buttonScreenshot
+            // 
+            this.buttonScreenshot.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.buttonScreenshot.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonScreenshot.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.buttonScreenshot.Location = new System.Drawing.Point(382, 424);
+            this.buttonScreenshot.Margin = new System.Windows.Forms.Padding(0);
+            this.buttonScreenshot.Name = "buttonScreenshot";
+            this.buttonScreenshot.Size = new System.Drawing.Size(389, 50);
+            this.buttonScreenshot.TabIndex = 127;
+            this.buttonScreenshot.Text = "Сделать скриншот";
+            this.buttonScreenshot.UseVisualStyleBackColor = false;
+            this.buttonScreenshot.Click += new System.EventHandler(this.buttonScreenshot_Click);
+            // 
             // trackBarDaysCT
             // 
             this.trackBarDaysCT.AccessibleRole = System.Windows.Forms.AccessibleRole.ProgressBar;
@@ -406,6 +475,10 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.label12);
+            this.groupBox1.Controls.Add(this.label13);
+            this.groupBox1.Controls.Add(this.label14);
+            this.groupBox1.Controls.Add(this.label15);
             this.groupBox1.Controls.Add(this.textBoxIntimect);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.textBoxDayct);
@@ -425,6 +498,46 @@
             this.groupBox1.TabIndex = 74;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Параметры";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label12.Location = new System.Drawing.Point(371, 228);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(52, 22);
+            this.label12.TabIndex = 69;
+            this.label12.Text = "ат. %";
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label13.Location = new System.Drawing.Point(371, 189);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(52, 22);
+            this.label13.TabIndex = 68;
+            this.label13.Text = "ат. %";
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label14.Location = new System.Drawing.Point(371, 143);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(52, 22);
+            this.label14.TabIndex = 67;
+            this.label14.Text = "ат. %";
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label15.Location = new System.Drawing.Point(371, 101);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(52, 22);
+            this.label15.TabIndex = 66;
+            this.label15.Text = "ат. %";
             // 
             // textBoxIntimect
             // 
@@ -620,13 +733,14 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1158, 879);
+            this.ClientSize = new System.Drawing.Size(1172, 953);
             this.Controls.Add(this.splitContainer);
             this.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FirstStep";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Первая ступень";
+            this.TopMost = true;
             this.splitContainer.Panel1.ResumeLayout(false);
             this.splitContainer.Panel1.PerformLayout();
             this.splitContainer.Panel2.ResumeLayout(false);
@@ -684,5 +798,14 @@
         private System.Windows.Forms.Button buttonCalculatect;
         private System.Windows.Forms.DataVisualization.Charting.Chart chartct;
         private System.Windows.Forms.Label Titlecubetor;
+        private System.Windows.Forms.Label labelEdC;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Button buttonScreenshot;
     }
 }
