@@ -38,6 +38,10 @@
             this.trackBarDaysCT = new System.Windows.Forms.TrackBar();
             this.buttonDrawct = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
             this.textBoxIntimect = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.textBoxDayct = new System.Windows.Forms.TextBox();
@@ -53,6 +57,10 @@
             this.buttonCalculatect = new System.Windows.Forms.Button();
             this.buttondrawgraph = new System.Windows.Forms.Button();
             this.groupBoxvr = new System.Windows.Forms.GroupBox();
+            this.label16 = new System.Windows.Forms.Label();
+            this.label17 = new System.Windows.Forms.Label();
+            this.label18 = new System.Windows.Forms.Label();
+            this.label19 = new System.Windows.Forms.Label();
             this.textBoxInTime = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.textBoxDays = new System.Windows.Forms.TextBox();
@@ -72,14 +80,6 @@
             this.chartct = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.Titlecubetor = new System.Windows.Forms.Label();
             this.buttonScreenshot = new System.Windows.Forms.Button();
-            this.label16 = new System.Windows.Forms.Label();
-            this.label17 = new System.Windows.Forms.Label();
-            this.label18 = new System.Windows.Forms.Label();
-            this.label19 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarDaysCT)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.groupBoxvr.SuspendLayout();
@@ -143,6 +143,46 @@
             this.groupBox1.TabIndex = 81;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Параметры";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label12.Location = new System.Drawing.Point(371, 229);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(52, 22);
+            this.label12.TabIndex = 77;
+            this.label12.Text = "ат. %";
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label13.Location = new System.Drawing.Point(371, 190);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(52, 22);
+            this.label13.TabIndex = 76;
+            this.label13.Text = "ат. %";
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label14.Location = new System.Drawing.Point(371, 144);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(52, 22);
+            this.label14.TabIndex = 75;
+            this.label14.Text = "ат. %";
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label15.Location = new System.Drawing.Point(371, 102);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(52, 22);
+            this.label15.TabIndex = 74;
+            this.label15.Text = "ат. %";
             // 
             // textBoxIntimect
             // 
@@ -329,6 +369,46 @@
             this.groupBoxvr.TabIndex = 77;
             this.groupBoxvr.TabStop = false;
             this.groupBoxvr.Text = "Параметры";
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label16.Location = new System.Drawing.Point(371, 229);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(52, 22);
+            this.label16.TabIndex = 73;
+            this.label16.Text = "ат. %";
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label17.Location = new System.Drawing.Point(371, 190);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(52, 22);
+            this.label17.TabIndex = 72;
+            this.label17.Text = "ат. %";
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label18.Location = new System.Drawing.Point(371, 144);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(52, 22);
+            this.label18.TabIndex = 71;
+            this.label18.Text = "ат. %";
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label19.Location = new System.Drawing.Point(371, 102);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(52, 22);
+            this.label19.TabIndex = 70;
+            this.label19.Text = "ат. %";
             // 
             // textBoxInTime
             // 
@@ -606,86 +686,6 @@
             this.buttonScreenshot.Text = "Сделать скриншот";
             this.buttonScreenshot.UseVisualStyleBackColor = false;
             this.buttonScreenshot.Click += new System.EventHandler(this.buttonScreenshot_Click);
-            // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label16.Location = new System.Drawing.Point(371, 229);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(52, 22);
-            this.label16.TabIndex = 73;
-            this.label16.Text = "ат. %";
-            // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.label17.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label17.Location = new System.Drawing.Point(371, 190);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(52, 22);
-            this.label17.TabIndex = 72;
-            this.label17.Text = "ат. %";
-            // 
-            // label18
-            // 
-            this.label18.AutoSize = true;
-            this.label18.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label18.Location = new System.Drawing.Point(371, 144);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(52, 22);
-            this.label18.TabIndex = 71;
-            this.label18.Text = "ат. %";
-            // 
-            // label19
-            // 
-            this.label19.AutoSize = true;
-            this.label19.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label19.Location = new System.Drawing.Point(371, 102);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(52, 22);
-            this.label19.TabIndex = 70;
-            this.label19.Text = "ат. %";
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label12.Location = new System.Drawing.Point(371, 229);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(52, 22);
-            this.label12.TabIndex = 77;
-            this.label12.Text = "ат. %";
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label13.Location = new System.Drawing.Point(371, 190);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(52, 22);
-            this.label13.TabIndex = 76;
-            this.label13.Text = "ат. %";
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label14.Location = new System.Drawing.Point(371, 144);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(52, 22);
-            this.label14.TabIndex = 75;
-            this.label14.Text = "ат. %";
-            // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label15.Location = new System.Drawing.Point(371, 102);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(52, 22);
-            this.label15.TabIndex = 74;
-            this.label15.Text = "ат. %";
             // 
             // FirstStep2231
             // 
