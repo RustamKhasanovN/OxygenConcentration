@@ -81,39 +81,24 @@ namespace OxygenConcentration.FormsforColumns
             // Очищаем предыдущие данные
             chartvr.Series["ΔCвр"].Points.Clear();
 
-            // Строим график для x от 1 до days
-            for (double x = 1; x <= days; x += 1)
+            // Строим график для x от 1 до 6
+            for (double x = 1; x <= 6; x += 1)
             {
                 double y = a - f * x;
                 chartvr.Series["ΔCвр"].Points.AddXY(x, y);
             }
 
             // Настройка осей
-            var chartArea = chartvr.ChartAreas[0];
-
-            // Устанавливаем минимальные и максимальные значения для осей
-            chartArea.AxisX.Minimum = 0; // Начало по оси X
-            chartArea.AxisX.Maximum = days; // Максимум по оси X
-            chartArea.AxisY.Minimum = Math.Min(a - f * days, a); // Минимум по оси Y
-            chartArea.AxisY.Maximum = Math.Max(a, a - f); // Максимум по оси Y
-            // Центрируем график
-            chartArea.Position.Auto = false;
-            chartArea.Position.X = 10; // Отступ от левого края
-            chartArea.Position.Y = 10; // Отступ от верхнего края
-            chartArea.Position.Width = 80; // Ширина области графика (в процентах)
-            chartArea.Position.Height = 80; // Высота области графика (в процентах)
             chartvr.ChartAreas[0].AxisX.Title = "День цикла";
             chartvr.ChartAreas[0].AxisY.Title = "Концентрация";
             chartvr.Invalidate(); // Обновляем график
-
-            // Создаем серию данных
+                                  // Создаем серию данных
             Series series = new Series
             {
                 ChartType = SeriesChartType.Line,
                 MarkerStyle = MarkerStyle.Circle,
                 MarkerSize = 10
             };
-
             foreach (var point in series.Points)
             {
                 point.ToolTip = $"X: {point.XValue}, Y: {point.YValues[0]:F2}"; // Ограничиваем до 2 знаков после запятой
@@ -378,8 +363,7 @@ namespace OxygenConcentration.FormsforColumns
                 }
             }
         }
+
     }
     
-
-
 }
