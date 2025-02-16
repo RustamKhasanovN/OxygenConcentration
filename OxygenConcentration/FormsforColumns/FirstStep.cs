@@ -127,7 +127,8 @@ namespace OxygenConcentration.FormsforColumns
             };
             foreach (var point in series.Points)
             {
-                point.ToolTip = $"X: {point.XValue}, Y: {point.YValues[0]:F2}"; // Ограничиваем до 2 знаков после запятой
+                // Ограничиваем до 2 знаков после запятой
+                point.ToolTip = $"X: {point.XValue}, Y: {point.YValues[0]:F2}";
             }
         }
 
@@ -213,6 +214,8 @@ namespace OxygenConcentration.FormsforColumns
                 MessageBox.Show("Поля не заполнены или заполнены неправильно");
             }
         }
+
+        //Кнопка Очистить
         private void buttonClearct_Click(object sender, EventArgs e)
         {
 
