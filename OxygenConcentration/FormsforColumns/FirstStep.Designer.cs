@@ -663,7 +663,7 @@
             this.textBoxBeginC.Name = "textBoxBeginC";
             this.textBoxBeginC.Size = new System.Drawing.Size(65, 26);
             this.textBoxBeginC.TabIndex = 48;
-            this.textBoxBeginC.Text = "0,2";
+            this.textBoxBeginC.Text = "0,02";
             // 
             // Vhightank
             // 
