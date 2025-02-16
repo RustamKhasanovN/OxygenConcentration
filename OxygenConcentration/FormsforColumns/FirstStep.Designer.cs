@@ -584,7 +584,7 @@
             this.textBoxInTime.Name = "textBoxInTime";
             this.textBoxInTime.Size = new System.Drawing.Size(65, 26);
             this.textBoxInTime.TabIndex = 61;
-            this.textBoxInTime.Text = "0,1967";
+            this.textBoxInTime.Text = "0,0467";
             this.textBoxInTime.TextChanged += new System.EventHandler(this.textBoxInTime_TextChanged);
             // 
             // label6
@@ -652,7 +652,7 @@
             this.textBoxdCzasutki.Name = "textBoxdCzasutki";
             this.textBoxdCzasutki.Size = new System.Drawing.Size(65, 26);
             this.textBoxdCzasutki.TabIndex = 49;
-            this.textBoxdCzasutki.Text = "0,0033";
+            this.textBoxdCzasutki.Text = "-0,0267";
             this.textBoxdCzasutki.TextChanged += new System.EventHandler(this.textBoxdCzasutki_TextChanged);
             // 
             // textBoxBeginC
