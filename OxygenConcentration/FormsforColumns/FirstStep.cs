@@ -9,19 +9,16 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Windows.Forms.DataVisualization.Charting;
 
-
 namespace OxygenConcentration.FormsforColumns
 {
     public partial class FirstStep : Form
     {
-        
         public FirstStep()
         {
             InitializeComponent();
             // Инициализируем TextBox значением TrackBar
             textBoxDays.Text = trackBarDaysVR.Value.ToString();
             textBoxDayct.Text = trackBarDaysCT.Value.ToString();
-            
         }
 
         private void Calculatebutton_Click(object sender, EventArgs e)
@@ -59,12 +56,50 @@ namespace OxygenConcentration.FormsforColumns
             textBoxdCzasutki.Text = "";
             textBoxInTime.Text = "";
             chartvr.Series["ΔCвр"].Points.Clear();
-          
         }
 
-        private void trackBarDaysVR_Scroll(object sender, EventArgs e)
+        private void buttondrawgraph_Click(object sender, EventArgs e)
         {
-            textBoxDays.Text = trackBarDaysVR.Value.ToString();   // Обновляем TextBox при изменении TrackBar
+            // Получаем значения a и f из TextBox
+            if (double.TryParse(textBoxBeginC.Text, out double a) &&
+                double.TryParse(textBoxdCzasutki.Text, out double f) &&
+                int.TryParse(textBoxDays.Text, out int days) && days > 0)
+            {
+                DrawGraph(a, f, days);
+            }
+            else
+            {
+                MessageBox.Show("Введите корректные значения для Начальная концентрация, Концентрация за сутки и количество дней.");
+            }
+        }
+        private void DrawGraph(double a, double f, int days)
+        {
+            // Очищаем предыдущие данные
+            chartvr.Series["ΔCвр"].Points.Clear();
+
+            // Строим график для x от 1 до 6
+            for (double x = 1; x <= 6; x += 1)
+            {
+                double y = a - f * x;
+                chartvr.Series["ΔCвр"].Points.AddXY(x, y);
+            }
+
+            // Настройка осей
+            chartvr.ChartAreas[0].AxisX.Title = "День цикла";
+            chartvr.ChartAreas[0].AxisY.Title = "Концентрация";
+            chartvr.Invalidate(); // Обновляем график
+                                  // Создаем серию данных
+            Series series = new Series
+            {
+                ChartType = SeriesChartType.Line,
+                MarkerStyle = MarkerStyle.Circle,
+                MarkerSize = 10
+            };
+            foreach (var point in series.Points)
+            {
+                point.ToolTip = $"X: {point.XValue}, Y: {point.YValues[0]:F2}"; // Ограничиваем до 2 знаков после запятой
+            }
+
         }
 
         private void textBoxDays_TextChanged(object sender, EventArgs e)
@@ -90,49 +125,10 @@ namespace OxygenConcentration.FormsforColumns
             }
         }
 
-        private void buttondrawgraph_Click(object sender, EventArgs e)
+        private void trackBarDaysVR_Scroll(object sender, EventArgs e)
         {
-            // Получаем значения a и f из TextBox
-            if (double.TryParse(textBoxBeginC.Text, out double a) && double.TryParse(textBoxdCzasutki.Text, out double f))
-            {
-                DrawGraph(a, f);
-            }
-            else
-            {
-                MessageBox.Show("Введите корректные значения для Начальная концетрация и Концентрация за сутки.");
-            }
+            textBoxDays.Text = trackBarDaysVR.Value.ToString();   // Обновляем TextBox при изменении TrackBar
         }
-        private void DrawGraph(double a, double f)
-        {
-            // Очищаем предыдущие данные
-            chartvr.Series["ΔCвр"].Points.Clear();
-
-            // Строим график для x от 1 до 6
-            for (double x = 1; x <= 6; x += 1)
-            {
-                double y = a - f * x;
-                chartvr.Series["ΔCвр"].Points.AddXY(x, y);
-            }
-
-            // Настройка осей
-            chartvr.ChartAreas[0].AxisX.Title = "День цикла";
-            chartvr.ChartAreas[0].AxisY.Title = "Концентрация";
-            chartvr.Invalidate(); // Обновляем график
-                                  // Создаем серию данных
-            Series series = new Series
-            {
-                ChartType = SeriesChartType.Line,
-                MarkerStyle = MarkerStyle.Circle,
-                MarkerSize = 10
-            };
-            foreach (var point in series.Points)
-            {
-                // Ограничиваем до 2 знаков после запятой
-                point.ToolTip = $"X: {point.XValue}, Y: {point.YValues[0]:F2}";
-            }
-        }
-
-        
 
         private void textBoxdCzasutki_TextChanged(object sender, EventArgs e)
         {
@@ -157,8 +153,6 @@ namespace OxygenConcentration.FormsforColumns
             textBoxdCzasutki.TextChanged += textBoxdCzasutki_TextChanged;
         }
 
-
-
         private void textBoxInTime_TextChanged(object sender, EventArgs e)
         {
             // Временно отключаем событие, чтобы избежать зацикливания
@@ -180,8 +174,8 @@ namespace OxygenConcentration.FormsforColumns
 
 
 
-        //Далее Куб+Тор
 
+        //Далее Куб+Тор
 
 
 
@@ -215,10 +209,8 @@ namespace OxygenConcentration.FormsforColumns
             }
         }
 
-        //Кнопка Очистить
         private void buttonClearct_Click(object sender, EventArgs e)
         {
-
             textBoxCzasytkict.Text = "";
             textBoxIntimect.Text = "";
             chartct.Series["ΔC"].Points.Clear();
@@ -226,7 +218,6 @@ namespace OxygenConcentration.FormsforColumns
 
         private void buttonDrawct_Click(object sender, EventArgs e)
         {
-
             // Получаем значения a и f из TextBox
             if (double.TryParse(textBoxBeginCct.Text, out double a) && double.TryParse(textBoxCzasytkict.Text, out double f))
             {
@@ -266,6 +257,47 @@ namespace OxygenConcentration.FormsforColumns
             }
         }
 
+        private void textBoxCzasytkict_TextChanged(object sender, EventArgs e)
+        {
+            // Временно отключаем событие, чтобы избежать зацикливания
+            textBoxCzasytkict.TextChanged -= textBoxCzasytkict_TextChanged;
+
+            if (decimal.TryParse(textBoxCzasytkict.Text, out decimal value))
+            {
+                // Ограничиваем до 4 знаков после запятой и убираем лишние нули
+                textBoxCzasytkict.Text = value.ToString("0.####");
+
+                // Устанавливаем курсор в конец текста
+                textBoxCzasytkict.SelectionStart = textBoxCzasytkict.Text.Length;
+            }
+            else
+            {
+                // Если значение не удалось распарсить, очищаем текстовое поле или обрабатываем ошибку
+                textBoxCzasytkict.Text = string.Empty; // или оставьте текст как есть
+            }
+
+            // Включаем событие обратно
+            textBoxCzasytkict.TextChanged += textBoxCzasytkict_TextChanged;
+        }
+
+        private void textBoxIntimect_TextChanged(object sender, EventArgs e)
+        {
+            // Временно отключаем событие, чтобы избежать зацикливания
+            textBoxIntimect.TextChanged -= textBoxIntimect_TextChanged;
+
+            if (decimal.TryParse(textBoxIntimect.Text, out decimal value))
+            {
+                // Ограничиваем до 4 знаков после запятой и убираем лишние нули
+                textBoxIntimect.Text = value.ToString("0.####");
+
+                // Устанавливаем курсор в конец текста
+                textBoxIntimect.SelectionStart = textBoxIntimect.Text.Length;
+            }
+
+            // Включаем событие обратно
+            textBoxIntimect.TextChanged += textBoxIntimect_TextChanged;
+        }
+
         private void textBoxDayct_TextChanged(object sender, EventArgs e)
         {
             // Проверяем, является ли вводимое значение числом
@@ -293,53 +325,11 @@ namespace OxygenConcentration.FormsforColumns
         {
             textBoxDayct.Text = trackBarDaysCT.Value.ToString();   // Обновляем TextBox при изменении TrackBar
         }
-        private void textBoxCzasytkict_TextChanged(object sender, EventArgs e)
-        {
-            // Временно отключаем событие, чтобы избежать зацикливания
-            textBoxCzasytkict.TextChanged -= textBoxCzasytkict_TextChanged;
-
-            if (decimal.TryParse(textBoxCzasytkict.Text, out decimal value))
-            {
-                // Ограничиваем до 4 знаков после запятой и убираем лишние нули
-                textBoxCzasytkict.Text = value.ToString("0.####");
-
-                // Устанавливаем курсор в конец текста
-                textBoxCzasytkict.SelectionStart = textBoxCzasytkict.Text.Length;
-            }
-            else
-            {
-                // Если значение не удалось распарсить, очищаем текстовое поле или обрабатываем ошибку
-                textBoxCzasytkict.Text = string.Empty; // или оставьте текст как есть
-            }
-
-            // Включаем событие обратно
-            textBoxCzasytkict.TextChanged += textBoxCzasytkict_TextChanged;
-        }
-
-
-        private void textBoxIntimect_TextChanged(object sender, EventArgs e)
-        {
-            // Временно отключаем событие, чтобы избежать зацикливания
-            textBoxIntimect.TextChanged -= textBoxIntimect_TextChanged;
-
-            if (decimal.TryParse(textBoxIntimect.Text, out decimal value))
-            {
-                // Ограничиваем до 4 знаков после запятой и убираем лишние нули
-                textBoxIntimect.Text = value.ToString("0.####");
-
-                // Устанавливаем курсор в конец текста
-                textBoxIntimect.SelectionStart = textBoxIntimect.Text.Length;
-            }
-
-            // Включаем событие обратно
-            textBoxIntimect.TextChanged += textBoxIntimect_TextChanged;
-        }
 
         private void buttonScreenshot_Click(object sender, EventArgs e)
         {
             TakeScreenshot();
         }
-
         private void TakeScreenshot()
         {
             // Создаем bitmap с размерами формы
@@ -364,9 +354,5 @@ namespace OxygenConcentration.FormsforColumns
                 }
             }
         }
-        
-        
     }
 }
-    
-
